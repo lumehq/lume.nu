@@ -1,7 +1,7 @@
 {
-	"name": "@lume/web",
+	"name": "lume",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -21,6 +21,7 @@
 		"typescript": "^5.5.4"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
 		"@tailwindcss/typography": "^0.5.14"
 	}
 }
