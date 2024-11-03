@@ -3,87 +3,68 @@ import { Seo } from "astro-seo-meta";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Lume | Nostr client for Windows and macOS</title>
-    <Seo
-      title="Lume"
-      description="Nostr client for Windows and macOS"
-      keywords={[
-        "nostr",
-        "nostr client",
-        "social network",
-        "desktop app",
-        "timeline",
-        "application",
-        "columns",
-        "tweetdeck",
-      ]}
-      themeColor="#fafafa"
-      colorScheme="light"
-      facebook={{
-        image: "/og-image.jpg",
-        url: "https://lume.nu",
-        type: "website",
-      }}
-      twitter={{
-        image: "/og-image.jpg",
-        card: "summary",
-      }}
-    />
-  </head>
-  <body
-    class="w-full h-full antialiased bg-neutral-50 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-50"
-  >
-    <div class="py-10 flex flex-col gap-10">
-      <div class="mx-auto max-w-xl w-full flex flex-col gap-2">
-        <div class="mb-5">
-          <img
-            src="/icon.png"
-            alt="App Icon"
-            class="size-14 shadow-md shadow-neutral-500/50 rounded-xl object-cover transform-gpu -rotate-6 hover:animate-spin"
-          />
-        </div>
-        <h1 class="text-xl font-serif font-semibold">
-          A multi-columns and multi-accounts Nostr client for Windows and macOS.
-        </h1>
-        <p class="text-sm font-medium text-neutral-700">
-          Lume is a <b>Nostr client</b> for desktop, including Linux, Windows, and
-          macOS. It is free and open-source; you can look at the source code on <a
-            href="https://github.com/lumehq/lume">GitHub</a
-          >. Lume is actively improving the app and adding new features; you can
-          expect a new update every month.
-        </p>
-        <p class="text-sm font-medium text-neutral-700">
-          <b>Latest version</b>: 2024.11.0
-        </p>
-        <div
-          class="w-full h-[120px] sm:h-[80px] flex flex-col sm:flex-row sm:items-center sm:justify-start justify-center gap-2"
-        >
-          <a
-            href="https://github.com/lumehq/lume/releases/tag/v24.11.0"
-            class="inline-flex items-center justify-center w-44 h-11 rounded-full bg-black hover:ring-2 ring-blue-500 ring-offset-2 text-white font-medium text-sm"
-            >Download</a
-          >
-        </div>
-      </div>
-      <div class="sm:max-w-3xl w-full mx-auto px-3 sm:px-0">
-        <video
-          class="aspect-video w-full h-auto rounded-xl"
-          autoplay
-          muted
-          controls
-        >
-          <source
-            src="https://video.nostr.build/4cc4df88caeb861b62e3f73bddbb5e0b5cf63617472a97d22f427e273ee0e127.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/icon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Lume - the Nostr client for Big Screen</title>
+		<Seo
+			title="Lume"
+			description="Lume is the Nostr client which support multi columns and multi accounts, tailored for desktop with big screen. Lume is supporting Windows and macOS under GPLv3 license."
+			keywords={[
+				"nostr",
+				"nostr client",
+				"social network",
+				"desktop app",
+				"timeline",
+				"application",
+				"columns",
+				"tweetdeck",
+			]}
+			themeColor="#fafafa"
+			colorScheme="light"
+			facebook={{
+				image: "/og-image.jpg",
+				url: "https://lume.nu",
+				type: "website",
+			}}
+			twitter={{
+				image: "/og-image.jpg",
+				card: "summary",
+			}}
+		/>
+	</head>
+	<body
+		class="w-full h-full antialiased bg-[#abafb4] text-neutral-950 dark:text-neutral-50"
+	>
+		<div class="px-2 py-10 sm:px-0 container mx-auto">
+			<div class="w-full md:w-2/3 mx-auto flex flex-col gap-6">
+				<div class="inline-flex items-center gap-2">
+					<img src="/logo.png" class="size-10" alt="Logo" />
+					<h1 class="font-black text-4xl text-white uppercase">Lume</h1>
+				</div>
+				<div>
+					<p class="text-2xl text-white">
+						Lume is the Nostr client which support <span
+							class="font-black italic">Multi Columns</span
+						> and<br /><span class="font-black italic">Multi Accounts</span>,
+						tailored for desktop with <span class="font-black italic"
+							>Big Screen</span
+						>.<br />Lume is supporting Windows and macOS under GPLv3 license.
+					</p>
+				</div>
+				<div>
+					<a
+						href=""
+						class="rounded-full bg-[#008fff] hover:bg-blue-600 w-64 h-12 flex items-center justify-center text-white text-lg font-semibold"
+						>Download Lume v24.11.0</a
+					>
+				</div>
+			</div>
+		</div>
+		<div class="px-1 sm:px-0">
+			<img src="/app.png" class="w-full h-auto" alt="App" />
+		</div>
+	</body>
 </html>
