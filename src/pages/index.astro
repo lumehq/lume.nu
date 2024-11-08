@@ -3,68 +3,146 @@ import { Seo } from "astro-seo-meta";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/icon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Lume - the Nostr client for Big Screen</title>
-		<Seo
-			title="Lume"
-			description="Lume is the Nostr client which support multi columns and multi accounts, tailored for desktop with big screen. Lume is supporting Windows and macOS under GPLv3 license."
-			keywords={[
-				"nostr",
-				"nostr client",
-				"social network",
-				"desktop app",
-				"timeline",
-				"application",
-				"columns",
-				"tweetdeck",
-			]}
-			themeColor="#fafafa"
-			colorScheme="light"
-			facebook={{
-				image: "/og-image.jpg",
-				url: "https://lume.nu",
-				type: "website",
-			}}
-			twitter={{
-				image: "/og-image.jpg",
-				card: "summary",
-			}}
-		/>
-	</head>
-	<body
-		class="w-full h-full antialiased bg-[#abafb4] text-neutral-950 dark:text-neutral-50"
-	>
-		<div class="px-2 py-10 sm:px-0 container mx-auto">
-			<div class="w-full md:w-2/3 mx-auto flex flex-col gap-6">
-				<div class="inline-flex items-center gap-2">
-					<img src="/logo.png" class="size-10" alt="Logo" />
-					<h1 class="font-black text-4xl text-white uppercase">Lume</h1>
-				</div>
-				<div>
-					<p class="text-2xl text-white">
-						Lume is the Nostr client which support <span
-							class="font-black italic">Multi Columns</span
-						> and<br /><span class="font-black italic">Multi Accounts</span>,
-						tailored for desktop with <span class="font-black italic"
-							>Big Screen</span
-						>.<br />Lume is supporting Windows and macOS under GPLv3 license.
-					</p>
-				</div>
-				<div>
-					<a
-						href="https://github.com/lumehq/lume/releases/latest"
-						class="rounded-full bg-[#008fff] hover:bg-blue-600 w-64 h-12 flex items-center justify-center text-white text-lg font-semibold"
-						>Download Lume v24.11.0</a
-					>
-				</div>
-			</div>
-		</div>
-		<div class="px-1 sm:px-0">
-			<img src="/app.png" class="w-full h-auto" alt="App" />
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lume - the Nostr client for Big Screen</title>
+    <Seo
+      title="Lume"
+      description="Lume is the Nostr client which support multi columns and multi accounts, tailored for desktop with big screen. Lume is supporting Windows and macOS under GPLv3 license."
+      keywords={[
+        "nostr",
+        "nostr client",
+        "social network",
+        "desktop app",
+        "timeline",
+        "application",
+        "columns",
+        "tweetdeck",
+      ]}
+      themeColor="#fafafa"
+      colorScheme="light"
+      facebook={{
+        image: "/og-image.jpg",
+        url: "https://lume.nu",
+        type: "website",
+      }}
+      twitter={{
+        image: "/og-image.jpg",
+        card: "summary",
+      }}
+    />
+  </head>
+  <body class="size-full antialiased bg-[#abafb4] text-white">
+    <div>
+      <div class="px-2 py-10 sm:px-0 container mx-auto">
+        <div class="w-full md:w-2/3 mx-auto flex flex-col gap-6">
+          <div class="inline-flex items-center gap-2">
+            <img src="/logo.png" class="size-10" alt="Logo" />
+            <h1 class="font-black text-4xl uppercase">Lume</h1>
+          </div>
+          <div>
+            <p class="text-2xl">
+              Lume is the Nostr client which support <span
+                class="font-black italic">Multi Columns</span
+              > and<br /><span class="font-black italic">Multi Accounts</span>,
+              tailored for desktop with <span class="font-black italic"
+                >Big Screen</span
+              >.<br />Lume is supporting Windows and macOS under GPLv3 license.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://github.com/lumehq/lume/releases/latest"
+              class="rounded-full bg-[#008fff] hover:bg-blue-600 w-64 h-12 flex items-center justify-center text-white text-lg font-semibold"
+            >
+              Download Lume v24.11
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="px-1 sm:px-0">
+        <img src="/app.png" class="w-full h-auto" alt="App" />
+      </div>
+      <div class="container mx-auto">
+        <div class="mb-16 flex items-center justify-center flex-wrap gap-6">
+          <span class="text-xl font-semibold">Multi Columns.</span>
+          <span class="text-xl font-semibold">Multi Accounts.</span>
+          <span class="text-xl font-semibold">Note Discovery.</span>
+          <span class="text-xl font-semibold">Negentropy.</span>
+          <span class="text-xl font-black italic"> And a lot of things. </span>
+        </div>
+        <div class="w-2/3 mx-auto h-1 bg-hr"></div>
+      </div>
+    </div>
+    <div class="py-16">
+      <div class="contaienr mx-auto flex flex-col items-center gap-6">
+        <div class="w-2/3 text-center">
+          <h1 class="text-4xl font-black">A Deck Experience for Nostr</h1>
+          <p class="text-xl">
+            You're finished reading notes from your contacts? <span
+              class="italic font-black">Open a new column</span
+            >
+            for more...You don't want to see notification, then <span
+              class="italic font-black">close</span
+            > the notification column. You’re in control.
+          </p>
+        </div>
+        <div class="w-2/3 h-[500px] bg-black rounded-xl"></div>
+      </div>
+    </div>
+    <div class="py-16">
+      <div class="contaienr mx-auto flex flex-col items-center gap-6">
+        <div class="w-2/3 text-center">
+          <h1 class="text-4xl font-black">Multi Accounts at Once</h1>
+          <p class="text-xl">
+            You're tired of switching account time to time. Lume allow you using
+            all accounts <span class="italic font-black">at once</span>, you can
+            open newsfeed for <span class="italic font-black">each account</span
+            >, when you need to some actions, just
+            <span class="italic font-black">choose the account</span> you wish, Lume
+            will handle the rest.
+          </p>
+        </div>
+        <div class="w-2/3 h-[500px] bg-black rounded-xl"></div>
+      </div>
+    </div>
+    <div class="py-16">
+      <div class="contaienr mx-auto flex flex-col items-center gap-6">
+        <div class="w-2/3 text-center">
+          <h1 class="text-4xl font-black">The Unbored Experience</h1>
+          <p class="text-xl">
+            You're bored? Then you can create a custom newsfeed for <span
+              class="italic font-black">specific group of people</span
+            >, or <span class="italic font-black">specific custom hashtags</span
+            >. You still bored? Then you can <span class="italic font-black"
+              >discover</span
+            > group or interest from other people, you can create a newsfeed for
+            specific <span class="italic font-black">Relay</span> too. You miss algorithm?,
+            then use <span class="italic font-black">Note Discovery</span>, AI
+            will feed you.
+          </p>
+        </div>
+        <div class="w-2/3 h-[500px] bg-black rounded-xl"></div>
+      </div>
+    </div>
+    <div class="py-16">
+      <div class="contaienr mx-auto flex flex-col items-center gap-6">
+        <div class="w-2/3 text-center">
+          <h1 class="text-4xl font-black">And more</h1>
+          <p class="text-xl">
+            Download Lume and experiences by yourself. It's free
+          </p>
+        </div>
+        <a
+          href="https://github.com/lumehq/lume/releases/latest"
+          class="rounded-full bg-[#008fff] hover:bg-blue-600 w-64 h-12 flex items-center justify-center text-white text-lg font-semibold"
+        >
+          Download Lume v24.11
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
